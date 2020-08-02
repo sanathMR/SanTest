@@ -1,0 +1,41 @@
+body{
+	background-image:url(jnnce.jpg);
+	 background-repeat:no-repeat;
+	 background-size: cover;
+}
+.head{
+	color:navy;
+	font-size:40px;
+	text-align:center;
+}
+.table{
+ text-align: center ;
+ background-color: ;
+  }
+  
+.zoom {
+    padding: 10px;
+	padding-left: 10px;
+    transition: transform .2s;
+    width: 70px;
+    height: 70px;
+}
+.zoom:hover {
+    transform: scale(1.2);
+}
+.box{
+font-size:20px;
+}
+td{
+	color:#1190cb;
+}
+
+tr,td{
+
+ font-size: 20px;
+}
+.but{
+font-size:35px;
+background-color:#1190cb;
+color:white;
+}

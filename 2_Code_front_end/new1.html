@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style type="text/css">
+body, html {
+    height: 100%;
+}
+.bg { 
+    /* The image used */
+    background-image: url("pro.jpg");
+
+    /* Full height */
+    height: 100%; 
+    width:100%;
+    /* Center and scale the image nicely */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+</style>
+<script type="text/javascript" src="new1.js">
+</script>
+
+<body>
+<div class="container bg py-5 text-center">
+<br />
+<br />
+<br />
+  <h2 style="color:white">User Login</h2><br/><br/>
+  <form onsubmit="return val()"  action="examp.php" >
+    
+	
+	<div class="input-group col-xs-2 col-xs-offset-5">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="text" class="form-control "  name="username" id="i1" placeholder="Username">
+    </div>
+	<br/>
+	<br/>
+   <div class="input-group col-xs-2 col-xs-offset-5 ">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" class="form-control" name="password" id="i2" placeholder="Password">
+    </div>
+    <br />
+	
+    <button type="submit" class="btn btn-default">Submit</button>
+	<br />
+	<br />
+	</form>
+	<h3 style="color:white">New user or forgot password?</h3>
+	<form action="new2.html">
+	 <button type="submit" class="btn btn-default">Generate OTP</button>
+  </form>
+	
+  
+	
+	
+
+
+
+
+</div>
+</body>
+</html>

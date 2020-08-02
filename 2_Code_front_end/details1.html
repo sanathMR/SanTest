@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' type='text/css' href='pers.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+ </head>
+ 
+<script type="text/javascript" src="new2.js">
+</script>
+<body>
+<div>
+<div class="col-sm-4">
+<div class="zoom" >
+	<a href="admin.html"> <img src="back2.png" height="60" width="60"> </a> 
+</div>
+</div>
+<div class="col-sm-4">
+<h1 class="head"> Enter Student details </h1>
+</div>
+</div>
+<br />
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="container">
+<div class="row">
+    <div class="col-sm-4">
+<table class="table" align="center">
+<form onsubmit="return validate() "action="ins.php" method="post" >
+
+  <tr class="info">
+ <td> USN </td>
+ <td> <input type="text" class="box" 
+       name="usn"  id="i1" maxlength="10" 
+       style="text-transform:uppercase" /> 
+ </td>
+</tr>  
+
+  <tr class="info">
+ <td> NAME </td>
+ <td> <input type="text" name="name" id="i2" class="box" style="text-transform:uppercase"> </td>
+</tr> 
+ 
+  <tr class="info">
+ <td> EMAIL </td>
+ <td> <input type="text" name="email" id="i3" class="box"> </td>
+</tr>
+ 
+  <tr class="info">
+ <td> PHONE NO </td>
+ <td> <input type="noumber" pattern="[0-9]+" id="i4" name="phno" class="box"> </td>
+</tr> 
+
+  <tr class="info">
+ <td> BRANCH </td>
+ <td align="left"> <select align="left" name="branch" class="box"><option>CSE</option><option>TC</option><option>CV</option><option>ME</option><option>ECE</option><option>EEE</option><option>ISE</option>
+</select> </td>
+</tr>
+ 
+  <tr class="info">
+ <td> GENDER</td>
+ <td align="left"> <select align="left" name="gender" class="box"><option>MALE</option><option>FEMALE</option> </td>
+</tr>
+ 
+  <tr class="info">
+ <td> DOB </td>
+ <td align="left"> <input align="left" type="date" name="dob" ><br> </td>
+</tr> 
+</table>
+</div>
+</div>
+<div>
+<input type="submit" value="Insert" class="but"></form>
+</div>
+</body>
+ 
+
+
+
+
+ 

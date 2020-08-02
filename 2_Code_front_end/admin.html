@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+.hed{
+background-color:#1190cb;
+color:white;
+padding: 10px 25px;
+}
+.hd{
+background-color:#1190cb;
+color:white;
+padding: 10px 35px;
+}
+
+.hdd{
+background-color:#1190cb;
+color:white;
+padding: 10px 30px;
+}
+
+.log{
+background-color:#1190cb;
+color:white;
+padding: 10px 40px;
+position: relative;
+right:30px;
+top:20px;
+}
+ body{
+	background-image:url(jnnce.jpg);
+	background-size:cover;
+	font-size:18px;
+}
+</style>
+<body>
+<div>
+    <form action="Flogin.html">
+	<input type="submit"  class="log" value="Logout" style="float:right" >
+    </form>
+</div>
+<div class="container">
+<h1 style='size:90;background-color:white' >Admin  <small>Welcome back</small></h1>
+
+
+<!--<a  href="Flogin.html"  ><h3 align="right" >logout</h3></a>-->
+<table class="table table-condensed">
+<td align="center"><form action="details1.html"><input type="submit" class="hed" value="Insert New Record"></form></td>
+<td align="center"><form action="details2.html"><input type="submit" class="hed"  value="Add Academic Details"></form></td>
+</table>
+
+<table class="table table-hover table-condensed">
+   
+      <tr class="info">
+        <td>See students' details</td>
+        <td align="right"><form action="per.php"><input type="submit" class="hed" value="View details"></form></input></td>
+       </tr>
+      <tr class="info">
+        <td>Academic details</td>
+        <td align="right"><form action="aca.php"><input type="submit" class="hed" value="View details"></form></td>
+      </tr>
+	  
+	  <tr class="info">
+        <td>Login Info</td>
+        <td align="right"><form action="log.php"><input type="submit" class="hed" value="View details"></form></td>
+        </tr> </tr>
+      </tr>
+</table>
+	  
+	  <table class="table table-hover table-condensed">
+    
+      <tr class="info">
+        <td>RUN prediction using conventional method</td>
+        <td align="right"><form action="fetch.php"><input type="submit" class="hed" value="Predict"></form></input></td>
+        </tr>
+      <tr class="info">
+        <td>RUN prediction usin ANN method</td>
+        <td align="right"><form action="wr.php"><input type="submit" class="hed" value="Predict"></form></td>
+        </tr>
+		<tr class="info">
+		<td>Reset all Prediction</td>
+        <td align="right"><form action="reset.php"><input type="submit" class="hdd" value="Reset"></form></td>
+        </tr>
+     
+	  <br/>
+	 
+	   <tr class="info">
+	   <td>See Number of students Eligible for Each Company</td>
+        <td align="right" style="padding-left:10px" ><form action="elg.php"><input type="submit" class="hd" value="View"></form></td>
+        </tr> </tr>
+ 
+	  </table>
+	   <br />
+	  <p align="center" style="background-color:white"><em>NOTE : If you run prediction multiple times then the predicted values will be overwrited with latest predictions</em>
+        </p>
+</div>
+</body>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("jnnce.jpg");background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  max-width: 300px;
+  min-height: 400px;
+  margin: auto;
+  position: relative;
+  margin-top: 80px;
+}
+
+input[name="switch"] {
+  display: none;
+  position: absolute;
+  top: -60px;
+}
+
+label.l_switch {
+  position: absolute;
+  top: 450px;
+  display: inline-block;
+  transition: all 0.5s;
+  font-size: 32px;
+  border: 2px solid #1190cb;
+  border-radius: 3px;
+  padding: 0px 10px;
+  user-select: none;
+ background-color:#1190cb;
+}
+
+input[name=switch]:checked + label {
+  color: white;
+  border: 2px solid #1190cb;
+  border-radius: 3px;
+  background-color:#13afcb;
+}
+
+#switch_register + label {
+  right: -40px;
+}
+
+.form {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: #444;
+  top: 0px;
+  left: 0px;
+  padding: 30px 20px;
+  border-radius: 3px;
+  display: flex;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;
+}
+
+#switch_register + label + .form,
+#switch_login + label + .form {
+  animation: 1s moveout;
+  background: #1190cb;
+  z-index: 1;
+  transform: translateX(40px) translateY(-40px);
+}
+
+#switch_register:checked + label + .form,
+#switch_login:checked + label + .form {
+  animation: 1s movein, 1s top infinite;
+  animation-delay: 0s, 0.5s;
+  z-index: 0;
+  transform: translateX(0px) translateY(0px);
+  background: #1190cb;
+}
+
+#switch_register:checked + label + .form *,
+#switch_login:checked + label + .form * {
+  opacity: 1;
+}
+
+#switch_register + label + .form *,
+#switch_login + label + .form * {
+  opacity: 0;
+  transition: 1s all;
+}
+
+@keyframes top {
+  from, to {
+    z-index: 2;
+  }
+}
+@keyframes moveout {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-160px);
+  }
+  100% {
+    transform: translateX(40px) translateY(-40px);
+  }
+}
+@keyframes movein {
+  0% {
+    transform: translateX(40px) translateY(-40px);
+  }
+  50% {
+    transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+/*-------| Form Styles |-------*/
+.form div {
+  flex: 1;
+  margin: auto;
+}
+
+.form label {
+  display: block;
+}
+
+
+.form h2 {
+  margin: 0px 0px 20px 0px;
+}
+
+
+.form input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #333;
+  border-radius: 3px;
+}
+.inner-addon {
+  position: relative;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.left-addon .glyphicon  { left:  0px;}
+.left-addon input  { padding-left:  30px; }
+.blue{
+color:black;
+}
+#sub:hover{
+background-color:#bdb8b9;
+color:white;
+}
+</style>
+
+
+
+
+
+<script type="text/javascript" src="new1.js">
+</script>
+
+
+
+<body>
+<div class="container">
+  <input type="radio" name="switch" id="switch_register"/>
+  <label class="l_switch" for="switch_register">need help?</label>
+  <form  onsubmit="return val1() " class="form"  action="l2.php">
+    <div>
+      <h2>PASSWORD</h2>
+      <label>USN</label>
+      <input type="text" class="form-control " name="uname" id="i1" placeholder="Enter USN">
+	  <input type="hidden" class="form-control " name="se" value="email" placeholder="Enter USN">
+       <input type="submit" id="sub" value="Get password" class="btn btn-default"></input>
+
+</div>
+     </form>
+
+  <input type="radio" name="switch" id="switch_login" CHECKED="CHECKED"/>
+  <label class="l_switch" for="switch_login">Login</label>
+  <form   class="form"   action="l1.php" >
+    <div> 
+     <h2>LOGIN</h2>
+      <label>USN</label>
+	  <div class="inner-addon left-addon">
+	  <i class="glyphicon glyphicon-user blue"></i> 
+      <input type="text" class="form-control "  name="uname" id="i2"  placeholder="Username">
+   </div>
+   <label>Password</label>
+ <div class="inner-addon left-addon">
+	  <i class="glyphicon glyphicon-lock blue"></i> 
+          
+	 <input type="password" class="form-control " name="password"   placeholder="Enter Password"/>
+     </div>
+	 </br>
+	 <input type="submit" value="submit"  class="btn btn-default"/>
+  
+    </div>
+  </form>
+</body>
+</html>

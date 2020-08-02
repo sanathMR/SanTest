@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+<h1 style='size:90' >Admin  <small>Welcome back</small></h1>
+
+<table class="table table-hover table-condensed">
+    
+    
+      <tr class="info">
+        <td>SEE ALL STUDENTS</td>
+        <td><form action="per.php"><input type="submit" value="View details"></form></input></td>
+        </tr>
+      <tr>
+        <td>STUDENTS ACAdemic</td>
+        <td><form action="aca.php"><input type="submit" value="View details"></form></td>
+        </tr> </tr>
+      <tr>
+	  <tr>
+        <td>Login Info</td>
+        <td><form action="log.php"><input type="submit" value="View details"></form></td>
+        </tr> </tr>
+      <tr>
+	  </table>
+	  
+	  <table class="table table-hover table-condensed">
+    <br/><br/><hr/>
+    
+      <tr class="info">
+        <td>RUN prediction using conventional method</td>
+        <td><form action="fetch.php"><input type="submit" value="Predict"></form></input></td>
+        </tr>
+      <tr>
+        <td>RUN prediction usin ANN method</td>
+        <td><form action="wr.php"><input type="submit" value="Predict"></form></td>
+        </tr> </tr>
+		<tr>
+        <td>Reset all Prediction</td>
+        <td><form action="reset.php"><input type="submit" value="Reset"></form></td>
+        </tr> </tr>
+     
+	  <br/>
+	 
+	   <tr>
+	   <td>See Noumber of students Eligible for Each Companys</td>
+        <td><form action="elg.php"><input type="submit" value="See"></form></td>
+        </tr> </tr>
+      <tr>
+	  <tr>
+        <td align="center" >NOTE : If you run prediction multiple times then the prdicted values will be overwrited with latest predictions</td>
+        <td></td>
+        </tr> </tr>
+      <tr>
+	  </table>
+</div>
+</body>

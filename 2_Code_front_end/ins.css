@@ -1,0 +1,17 @@
+body{
+	background-image:url(jnnce.jpg);
+	 background-repeat:no-repeat;
+	 background-size: cover;
+
+}
+.head{
+	color:navy;
+	font-size:40px;
+	text-align:center;
+}
+.details{
+padding-left:10px;
+font-size:40px;
+background-color:#1190cb;
+color:white;
+}

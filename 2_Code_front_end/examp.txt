@@ -1,0 +1,19 @@
+import smtplib
+import random
+import string
+from time import time
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login("placeofficialjnn@gmail.com", "GANESHsanath@2018")
+pwlist = ([random.choice(string.digits) for i in range(1)]+
+           [random.choice(string.ascii_letters) for i in range(5)])
+random.shuffle(pwlist)
+pw = ''.join(pwlist)
+
+
+
+server.sendmail("placeofficialjnn@gmail.com", "dhanusanath29@gmail.com",pw)
+server.quit()
+
+with open('C:\\xampp\\htdocs\\Project\\log.txt','w+') as f:
+	f.write(str(time()))
